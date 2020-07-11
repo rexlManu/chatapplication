@@ -1,0 +1,1131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Swipe - The Simplest Chat Platform</title>
+    <meta name="description" content="#">
+    <link rel="stylesheet" href="css/grayshift.min.css">
+    <link rel="stylesheet" href="css/swipe.min.css">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" integrity="sha384-Mujw/rYMLaAmNKgBlyiHh/Vc+p4UU7I/lfQl/X4pICrFJguheK7vZjZmZyTix1HM" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="d-flex flex-column flex-lg-row">
+        <nav class="navside navside-expand-lg sticky-top order-2 order-lg-0">
+            <div class="container">
+                <a class="d-none d-lg-inline link-body" rel="home" href="#">
+                    <i class="gi-animation-hover">
+            <svg class="gi gi-github-fill gi-animation gi-animation-hover-pulse fs-xxl" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 1A10.89 10.89 0 0 0 1 11.77 10.79 10.79 0 0 0 8.52 22c.55.1.75-.23.75-.52v-1.83c-3.06.65-3.71-1.44-3.71-1.44a2.86 2.86 0 0 0-1.22-1.58c-1-.66.08-.65.08-.65a2.31 2.31 0 0 1 1.68 1.11 2.37 2.37 0 0 0 3.2.89 2.33 2.33 0 0 1 .7-1.44c-2.44-.27-5-1.19-5-5.32a4.15 4.15 0 0 1 1.11-2.91 3.78 3.78 0 0 1 .11-2.84s.93-.29 3 1.1a10.68 10.68 0 0 1 5.5 0c2.1-1.39 3-1.1 3-1.1a3.78 3.78 0 0 1 .11 2.84A4.15 4.15 0 0 1 19 11.2c0 4.14-2.58 5.05-5 5.32a2.5 2.5 0 0 1 .75 2v2.95c0 .35.2.63.75.52A10.8 10.8 0 0 0 23 11.77 10.89 10.89 0 0 0 12 1"/>
+            </svg>
+          </i>
+                </a>
+                <ul class="nav navside-nav" role="tablist" aria-orientation="vertical">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#channels" role="tab" aria-controls="channels" aria-selected="true">
+                            <i class="gi-animation-hover">
+                <svg class="gi gi-message-square-fill gi-animation gi-animation-hover-pulse fs-lg" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 3H5a3 3 0 0 0-3 3v15a1 1 0 0 0 .51.87A1 1 0 0 0 3 22a1 1 0 0 0 .51-.14L8 19.14a1 1 0 0 1 .55-.14H19a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3zM8 12a1 1 0 1 1 1-1 1 1 0 0 1-1 1zm4 0a1 1 0 1 1 1-1 1 1 0 0 1-1 1zm4 0a1 1 0 1 1 1-1 1 1 0 0 1-1 1z"/>
+                </svg>
+              </i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#friends" role="tab" aria-controls="friends" aria-selected="false">
+                            <i class="gi-animation-hover">
+                <svg class="gi gi-people-fill gi-animation gi-animation-hover-pulse fs-lg" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 11a4 4 0 1 0-4-4 4 4 0 0 0 4 4z"/>
+                  <path d="M17 13a3 3 0 1 0-3-3 3 3 0 0 0 3 3z"/>
+                  <path d="M21 20a1 1 0 0 0 1-1 5 5 0 0 0-8.06-3.95A7 7 0 0 0 2 20a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1"/>
+                </svg>
+              </i>
+                        </a>
+                    </li>
+                    <li class="nav-item flex-lg-grow-1">
+                        <a class="nav-link" data-toggle="tab" href="#notifications" role="tab" aria-controls="notifications" aria-selected="false">
+                            <i class="gi-animation-hover">
+                <svg class="gi gi-bell-fill gi-animation gi-animation-hover-pulse fs-lg" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20.52 15.21l-1.8-1.81V8.94a6.86 6.86 0 0 0-5.82-6.88 6.74 6.74 0 0 0-7.62 6.67v4.67l-1.8 1.81A1.64 1.64 0 0 0 4.64 18H8v.34A3.84 3.84 0 0 0 12 22a3.84 3.84 0 0 0 4-3.66V18h3.36a1.64 1.64 0 0 0 1.16-2.79zM14 18.34A1.88 1.88 0 0 1 12 20a1.88 1.88 0 0 1-2-1.66V18h4z"/>
+                </svg>
+              </i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">
+                            <i class="gi-animation-hover">
+                <svg class="gi gi-settings-fill gi-animation gi-animation-hover-pulse fs-lg" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="1.5"/>
+                  <path d="M21.89 10.32L21.1 7.8a2.26 2.26 0 0 0-2.88-1.51l-.34.11a1.74 1.74 0 0 1-1.59-.26l-.11-.08a1.76 1.76 0 0 1-.69-1.43v-.28a2.37 2.37 0 0 0-.68-1.68 2.26 2.26 0 0 0-1.6-.67h-2.55a2.32 2.32 0 0 0-2.29 2.33v.24a1.94 1.94 0 0 1-.73 1.51l-.13.1a1.93 1.93 0 0 1-1.78.29 2.14 2.14 0 0 0-1.68.12 2.18 2.18 0 0 0-1.12 1.33l-.82 2.6a2.34 2.34 0 0 0 1.48 2.94h.16a1.83 1.83 0 0 1 1.12 1.22l.06.16a2.06 2.06 0 0 1-.23 1.86 2.37 2.37 0 0 0 .49 3.3l2.07 1.57a2.25 2.25 0 0 0 1.35.43A2 2 0 0 0 9 22a2.25 2.25 0 0 0 1.47-1l.23-.33a1.8 1.8 0 0 1 1.43-.77 1.75 1.75 0 0 1 1.5.78l.12.17a2.24 2.24 0 0 0 3.22.53L19 19.86a2.38 2.38 0 0 0 .5-3.23l-.26-.38A2 2 0 0 1 19 14.6a1.89 1.89 0 0 1 1.21-1.28l.2-.07a2.36 2.36 0 0 0 1.48-2.93zM12 15.5a3.5 3.5 0 1 1 3.5-3.5 3.5 3.5 0 0 1-3.5 3.5z"/>
+                </svg>
+              </i>
+                        </a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block">
+                        <a class="nav-link" href="#">
+                            <i class="gi-animation-hover">
+                <svg class="gi gi-bulb-fill gi-animation gi-animation-hover-pulse fs-lg" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 7a5 5 0 0 0-3 9v4a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-4a5 5 0 0 0-3-9z"/>
+                  <path d="M12 6a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v2a1 1 0 0 0 1 1z"/>
+                  <path d="M21 11h-2a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2z"/>
+                  <path d="M5 11H3a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2z"/>
+                  <path d="M7.66 6.42L6.22 5a1 1 0 0 0-1.39 1.47l1.44 1.39a1 1 0 0 0 .73.28 1 1 0 0 0 .72-.31 1 1 0 0 0-.06-1.41z"/>
+                  <path d="M19.19 5.05a1 1 0 0 0-1.41 0l-1.44 1.37a1 1 0 0 0 0 1.41 1 1 0 0 0 .72.31 1 1 0 0 0 .69-.28l1.44-1.39a1 1 0 0 0 0-1.42z"/>
+                </svg>
+              </i>
+                        </a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block">
+                        <span class="avatar avatar-md status status-online lead bg-primary rounded-circle">jd</span>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="sidebar sidebar-expand-lg order-1 order-lg-0">
+            <div class="container py-5 px-lg-5">
+                <form>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <svg class="gi gi-search fs-sm" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.71 19.29l-3.4-3.39A7.92 7.92 0 0 0 19 11a8 8 0 1 0-8 8 7.92 7.92 0 0 0 4.9-1.69l3.39 3.4a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42zM5 11a6 6 0 1 1 6 6 6 6 0 0 1-6-6z"/>
+              </svg>
+                        </div>
+                        <input class="form-control form-control-lg" type="search" placeholder="Search" aria-label="Search">
+                    </div>
+                </form>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="channels" role="tabpanel">
+                        <ul class="nav nav-tabs nav-justified nav-sm mt-3" role="tablist" aria-orientation="horizontal">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#direct" role="tab" aria-controls="direct" aria-selected="true">Direct</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#groups" role="tab" aria-controls="groups" aria-selected="false">Groups</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex align-items-center mt-5">
+                            <h1 class="mr-3 fs-sm">Channels</h1>
+                            <button class="btn btn-sm btn-circle btn-neutral" data-toggle="modal" data-target="#compose" type="button">
+                <svg class="gi gi-edit-2-fill fs-xs" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 20H5a1 1 0 0 0 0 2h14a1 1 0 0 0 0-2z"/>
+                  <path d="M5 18h.09l4.17-.38a2 2 0 0 0 1.21-.57l9-9a1.92 1.92 0 0 0-.07-2.71L16.66 2.6A2 2 0 0 0 14 2.53l-9 9a2 2 0 0 0-.57 1.21L4 16.91a1 1 0 0 0 .29.8A1 1 0 0 0 5 18zM15.27 4L18 6.73l-2 1.95L13.32 6z"/>
+                </svg>
+              </button>
+                        </div>
+                        <hr class="mb-0">
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="direct" role="tabpanel">
+                            </div>
+                            <div class="tab-pane fade" id="groups" role="tabpanel">
+                                <div class="channel flex-column">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <span class="avatar avatar-xs mr-3 bg-primary rounded-circle">s</span>
+                                        <h3 class="mr-auto fs-xxs">Squad Ghouls</h3>
+                                        <p class="ml-3">Today</p>
+                                    </div>
+                                    <p class="text">The quick brown fox jumps over the lazy dog.</p>
+                                </div>
+                                <div class="channel flex-column">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <span class="avatar avatar-xs mr-3 bg-success rounded-circle">s</span>
+                                        <h3 class="mr-auto fs-xxs">Squad Ghouls</h3>
+                                        <p class="ml-3">Sunday</p>
+                                    </div>
+                                    <p class="text">The quick brown fox jumps over the lazy dog.</p>
+                                </div>
+                                <div class="channel flex-column">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <span class="avatar avatar-xs mr-3 bg-info rounded-circle">s</span>
+                                        <h3 class="mr-auto fs-xxs">Squad Ghouls</h3>
+                                        <p class="ml-3">Saturday</p>
+                                    </div>
+                                    <p class="text">The quick brown fox jumps over the lazy dog.</p>
+                                </div>
+                                <div class="channel flex-column">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <span class="avatar avatar-xs mr-3 bg-warning rounded-circle">s</span>
+                                        <h3 class="mr-auto fs-xxs">Squad Ghouls</h3>
+                                        <p class="ml-3">Friday</p>
+                                    </div>
+                                    <p class="text">The quick brown fox jumps over the lazy dog.</p>
+                                </div>
+                                <div class="channel flex-column">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <span class="avatar avatar-xs mr-3 bg-danger rounded-circle">s</span>
+                                        <h3 class="mr-auto fs-xxs">Squad Ghouls</h3>
+                                        <p class="ml-3">Thursday</p>
+                                    </div>
+                                    <p class="text">The quick brown fox jumps over the lazy dog.</p>
+                                </div>
+                                <div class="channel flex-column">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <span class="avatar avatar-xs mr-3 bg-primary rounded-circle">s</span>
+                                        <h3 class="mr-auto fs-xxs">Squad Ghouls</h3>
+                                        <p class="ml-3">Wednesday</p>
+                                    </div>
+                                    <p class="text">The quick brown fox jumps over the lazy dog.</p>
+                                </div>
+                                <div class="channel flex-column">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <span class="avatar avatar-xs mr-3 bg-success rounded-circle">s</span>
+                                        <h3 class="mr-auto fs-xxs">Squad Ghouls</h3>
+                                        <p class="ml-3">Tuesday</p>
+                                    </div>
+                                    <p class="text">The quick brown fox jumps over the lazy dog.</p>
+                                </div>
+                                <div class="channel flex-column">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <span class="avatar avatar-xs mr-3 bg-info rounded-circle">s</span>
+                                        <h3 class="mr-auto fs-xxs">Squad Ghouls</h3>
+                                        <p class="ml-3">Monday</p>
+                                    </div>
+                                    <p class="text">The quick brown fox jumps over the lazy dog.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="friends" role="tabpanel">
+                        <h2 class="my-5 fs-sm">Friends</h2>
+                        <hr class="mb-0">
+
+                    </div>
+                    <div class="tab-pane fade" id="notifications" role="tabpanel">
+                        <h2 class="my-5 fs-sm">Notifications</h2>
+                        <hr class="mb-0">
+                        <div class="d-flex align-items-center align-items-lg-start py-5 border-bottom">
+                            <span class="icon mr-3 bg-neutral rounded-circle">
+                <svg class="gi gi-person-done-fill fs-xs" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21.66 4.25a1 1 0 0 0-1.41.09l-1.87 2.15-.63-.71a1 1 0 0 0-1.5 1.33l1.39 1.56a1 1 0 0 0 .75.33 1 1 0 0 0 .74-.34l2.61-3a1 1 0 0 0-.08-1.41z"/>
+                  <path d="M10 11a4 4 0 1 0-4-4 4 4 0 0 0 4 4z"/>
+                  <path d="M16 21a1 1 0 0 0 1-1 7 7 0 0 0-14 0 1 1 0 0 0 1 1"/>
+                </svg>
+              </span>
+                            <p>The quick brown fox jumps over the lazy dog.</p>
+                        </div>
+                        <div class="d-flex align-items-center align-items-lg-start py-5 border-bottom">
+                            <div class="icon mr-3 bg-neutral rounded-circle">
+                                <svg class="gi gi-lock-fill fs-xs" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="15" r="1"/>
+                  <path d="M17 8h-1V6.11a4 4 0 1 0-8 0V8H7a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-8a3 3 0 0 0-3-3zm-7-1.89A2.06 2.06 0 0 1 12 4a2.06 2.06 0 0 1 2 2.11V8h-4zM12 18a3 3 0 1 1 3-3 3 3 0 0 1-3 3z"/>
+                </svg>
+                            </div>
+                            <p>The quick brown fox jumps over the lazy dog.</p>
+                        </div>
+                        <div class="d-flex align-items-center align-items-lg-start py-5 border-bottom">
+                            <span class="icon mr-3 bg-neutral rounded-circle">
+                <svg class="gi gi-attach fs-xs" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.29 21a6.23 6.23 0 0 1-4.43-1.88 6 6 0 0 1-.22-8.49L12 3.2A4.11 4.11 0 0 1 15 2a4.48 4.48 0 0 1 3.19 1.35 4.36 4.36 0 0 1 .15 6.13l-7.4 7.43a2.54 2.54 0 0 1-1.81.75 2.72 2.72 0 0 1-1.95-.82 2.68 2.68 0 0 1-.08-3.77l6.83-6.86a1 1 0 0 1 1.37 1.41l-6.83 6.86a.68.68 0 0 0 .08.95.78.78 0 0 0 .53.23.56.56 0 0 0 .4-.16l7.39-7.43a2.36 2.36 0 0 0-.15-3.31 2.38 2.38 0 0 0-3.27-.15L6.06 12a4 4 0 0 0 .22 5.67 4.22 4.22 0 0 0 3 1.29 3.67 3.67 0 0 0 2.61-1.06l7.39-7.43a1 1 0 1 1 1.42 1.41l-7.39 7.43A5.65 5.65 0 0 1 9.29 21z"/>
+                </svg>
+              </span>
+                            <p>The quick brown fox jumps over the lazy dog.</p>
+                        </div>
+                        <div class="d-flex align-items-center align-items-lg-start py-5 border-bottom">
+                            <span class="icon mr-3 bg-neutral rounded-circle">
+                <svg class="gi gi-gift-fill fs-xs" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.64 15.27v4.82a.92.92 0 0 0 .92.91h5.62v-5.73z"/>
+                  <path d="M12.82 21h5.62a.92.92 0 0 0 .92-.91v-4.82h-6.54z"/>
+                  <path d="M20.1 7.09h-1.84a2.82 2.82 0 0 0 .29-1.23A2.87 2.87 0 0 0 15.68 3 4.21 4.21 0 0 0 12 5.57 4.21 4.21 0 0 0 8.32 3a2.87 2.87 0 0 0-2.87 2.86 2.82 2.82 0 0 0 .29 1.23H3.9c-.5 0-.9.59-.9 1.31v3.93c0 .72.4 1.31.9 1.31h7.28V7.09h1.64v6.55h7.28c.5 0 .9-.59.9-1.31V8.4c0-.72-.4-1.31-.9-1.31zm-11.78 0a1.23 1.23 0 1 1 0-2.45c1.4 0 2.19 1.44 2.58 2.45zm7.36 0H13.1c.39-1 1.18-2.45 2.58-2.45a1.23 1.23 0 1 1 0 2.45z"/>
+                </svg>
+              </span>
+                            <p>The quick brown fox jumps over the lazy dog.</p>
+                        </div>
+                        <div class="d-flex align-items-center align-items-lg-start py-5 border-bottom">
+                            <span class="icon mr-3 bg-neutral rounded-circle">
+                <svg class="gi gi-video-fill fs-xs" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 7.15a1.7 1.7 0 0 0-1.85.3l-2.15 2V8a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h9a3 3 0 0 0 3-3v-1.45l2.16 2a1.74 1.74 0 0 0 1.16.45 1.68 1.68 0 0 0 .69-.15 1.6 1.6 0 0 0 1-1.48V8.63A1.6 1.6 0 0 0 21 7.15z"/>
+                </svg>
+              </span>
+                            <p>The quick brown fox jumps over the lazy dog.</p>
+                        </div>
+                        <div class="d-flex align-items-center align-items-lg-start py-5 border-bottom">
+                            <span class="icon mr-3 bg-neutral rounded-circle">
+                <svg class="gi gi-heart-fill fs-xs" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 21a1 1 0 0 1-.71-.29l-7.77-7.78a5.26 5.26 0 0 1 0-7.4 5.24 5.24 0 0 1 7.4 0L12 6.61l1.08-1.08a5.24 5.24 0 0 1 7.4 0 5.26 5.26 0 0 1 0 7.4l-7.77 7.78A1 1 0 0 1 12 21z"/>
+                </svg>
+              </span>
+                            <p>The quick brown fox jumps over the lazy dog.</p>
+                        </div>
+                        <div class="d-flex align-items-center align-items-lg-start py-5 border-bottom">
+                            <span class="icon mr-3 bg-neutral rounded-circle">
+                <svg class="gi gi-calendar-fill fs-xs" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18 4h-1V3a1 1 0 0 0-2 0v1H9V3a1 1 0 0 0-2 0v1H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zM8 17a1 1 0 1 1 1-1 1 1 0 0 1-1 1zm8 0h-4a1 1 0 0 1 0-2h4a1 1 0 0 1 0 2zm3-6H5V7a1 1 0 0 1 1-1h1v1a1 1 0 0 0 2 0V6h6v1a1 1 0 0 0 2 0V6h1a1 1 0 0 1 1 1z"/>
+                </svg>
+              </span>
+                            <p>The quick brown fox jumps over the lazy dog.</p>
+                        </div>
+                        <div class="d-flex align-items-center align-items-lg-start py-5 border-bottom">
+                            <span class="icon mr-3 bg-neutral rounded-circle">
+                <svg class="gi gi-flag-fill fs-xs" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.27 4.68a1.79 1.79 0 0 0-1.6-.25 7.53 7.53 0 0 1-2.17.28 8.54 8.54 0 0 1-3.13-.78A10.15 10.15 0 0 0 8.5 3c-2.89 0-4 1-4.2 1.14a1 1 0 0 0-.3.72V20a1 1 0 0 0 2 0v-4.3a6.28 6.28 0 0 1 2.5-.41 8.54 8.54 0 0 1 3.13.78 10.15 10.15 0 0 0 3.87.93 7.66 7.66 0 0 0 3.5-.7 1.74 1.74 0 0 0 1-1.55V6.11a1.77 1.77 0 0 0-.73-1.43z"/>
+                </svg>
+              </span>
+                            <p>The quick brown fox jumps over the lazy dog.</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="settings" role="tabpanel">
+                        <h2 class="my-5 fs-sm">Settings</h2>
+                        <hr class="mb-0">
+                        <div id="accordionOne">
+                            <div class="accordion-item">
+                                <div class="accordion-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" role="button" aria-expanded="false" aria-controls="collapseOne">
+                                    <div class="mr-auto">
+                                        <h3 class="mb-1 fs-xxs lh-lg">My Account</h3>
+                                        <p>Configure your preferences.</p>
+                                    </div>
+                                    <svg class="gi gi-arrow-ios-forward fs-sm" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 19a1 1 0 0 1-.64-.23 1 1 0 0 1-.13-1.41L13.71 12 9.39 6.63a1 1 0 0 1 .15-1.41 1 1 0 0 1 1.46.15l4.83 6a1 1 0 0 1 0 1.27l-5 6A1 1 0 0 1 10 19z"/>
+                  </svg>
+                                    <svg class="gi gi-arrow-ios-downward fs-sm" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 16a1 1 0 0 1-.64-.23l-6-5a1 1 0 1 1 1.28-1.54L12 13.71l5.36-4.32a1 1 0 0 1 1.41.15 1 1 0 0 1-.14 1.46l-6 4.83A1 1 0 0 1 12 16z"/>
+                  </svg>
+                                </div>
+                                <div class="collapse" id="collapseOne" data-parent="#accordionOne" aria-labelledby="headingOne">
+                                    <div class="accordion-body">
+                                        <form>
+                                            <label for="name">Name</label>
+                                            <input class="form-control form-control-lg mb-5" id="name" type="text" placeholder="Name">
+                                            <label for="email">Email</label>
+                                            <input class="form-control form-control-lg mb-5" id="email" type="email" placeholder="Email Address">
+                                            <label for="address">Address</label>
+                                            <input class="form-control form-control-lg mb-5" id="address" type="text" placeholder="Address">
+                                            <label for="biography">Biography</label>
+                                            <textarea class="form-control mb-5" id="biography" rows="3" placeholder="Tell us a little about yourself"></textarea>
+                                            <button class="btn btn-block btn-lg btn-primary" type="submit">Apply changes</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                                    <div class="mr-auto">
+                                        <h3 class="mb-1 fs-xxs lh-lg">Privacy & Safety</h3>
+                                        <p>Configure your preferences.</p>
+                                    </div>
+                                    <svg class="gi gi-arrow-ios-forward fs-sm" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 19a1 1 0 0 1-.64-.23 1 1 0 0 1-.13-1.41L13.71 12 9.39 6.63a1 1 0 0 1 .15-1.41 1 1 0 0 1 1.46.15l4.83 6a1 1 0 0 1 0 1.27l-5 6A1 1 0 0 1 10 19z"/>
+                  </svg>
+                                    <svg class="gi gi-arrow-ios-downward fs-sm" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 16a1 1 0 0 1-.64-.23l-6-5a1 1 0 1 1 1.28-1.54L12 13.71l5.36-4.32a1 1 0 0 1 1.41.15 1 1 0 0 1-.14 1.46l-6 4.83A1 1 0 0 1 12 16z"/>
+                  </svg>
+                                </div>
+                                <div class="collapse" id="collapseTwo" data-parent="#accordionOne" aria-labelledby="headingTwo">
+                                    <div class="accordion-body">
+                                        <form>
+                                            <label for="currentPassword">Current Password</label>
+                                            <input class="form-control form-control-lg mb-5" id="currentPassword" type="password" placeholder="Current Password">
+                                            <label for="newPassword">New Password</label>
+                                            <input class="form-control form-control-lg mb-5" id="newPassword" type="password" placeholder="New Password">
+                                            <label for="repeatPassword">Repeat Password</label>
+                                            <input class="form-control form-control-lg mb-5" id="repeatPassword" type="password" placeholder="Repeat Password">
+                                            <button class="btn btn-block btn-lg btn-primary" type="submit">Apply changes</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header" id="headingThree" data-toggle="collapse" data-target="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseThree">
+                                    <div class="mr-auto">
+                                        <h3 class="mb-1 fs-xxs lh-lg">Notifications</h3>
+                                        <p>Configure your preferences.</p>
+                                    </div>
+                                    <svg class="gi gi-arrow-ios-forward fs-sm" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 19a1 1 0 0 1-.64-.23 1 1 0 0 1-.13-1.41L13.71 12 9.39 6.63a1 1 0 0 1 .15-1.41 1 1 0 0 1 1.46.15l4.83 6a1 1 0 0 1 0 1.27l-5 6A1 1 0 0 1 10 19z"/>
+                  </svg>
+                                    <svg class="gi gi-arrow-ios-downward fs-sm" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 16a1 1 0 0 1-.64-.23l-6-5a1 1 0 1 1 1.28-1.54L12 13.71l5.36-4.32a1 1 0 0 1 1.41.15 1 1 0 0 1-.14 1.46l-6 4.83A1 1 0 0 1 12 16z"/>
+                  </svg>
+                                </div>
+                                <div class="collapse" id="collapseThree" data-parent="#accordionOne" aria-labelledby="headingThree">
+                                    <div class="accordion-body">
+                                        <form>
+                                            <div class="d-flex align-items-center mb-3">
+                                                <h4 class="mr-auto fs-xxs lh-lg">Action</h4>
+                                                <div class="form-check form-switch fs-sm">
+                                                    <input class="form-check-input" id="switchOne" type="checkbox" checked>
+                                                    <label class="sr-only" for="switchOne">Switch</label>
+                                                </div>
+                                            </div>
+                                            <p>The quick brown fox jumps over the lazy dog.</p>
+                                            <hr>
+                                            <div class="d-flex align-items-center mb-3">
+                                                <h4 class="mr-auto fs-xxs lh-lg">Another action</h4>
+                                                <div class="form-check form-switch fs-sm">
+                                                    <input class="form-check-input" id="switchTwo" type="checkbox">
+                                                    <label class="sr-only" for="switchTwo">Switch</label>
+                                                </div>
+                                            </div>
+                                            <p>The quick brown fox jumps over the lazy dog.</p>
+                                            <hr>
+                                            <div class="d-flex align-items-center mb-3">
+                                                <h4 class="mr-auto fs-xxs lh-lg">Something else here</h4>
+                                                <div class="form-check form-switch fs-sm">
+                                                    <input class="form-check-input" id="switchThree" type="checkbox">
+                                                    <label class="sr-only" for="switchThree">Switch</label>
+                                                </div>
+                                            </div>
+                                            <p>The quick brown fox jumps over the lazy dog.</p>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header" id="headingFour" data-toggle="collapse" data-target="#collapseFour" role="button" aria-expanded="false" aria-controls="collapseFour">
+                                    <div class="mr-auto">
+                                        <h3 class="mb-1 fs-xxs lh-lg">Integrations</h3>
+                                        <p>Configure your preferences.</p>
+                                    </div>
+                                    <svg class="gi gi-arrow-ios-forward fs-sm" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 19a1 1 0 0 1-.64-.23 1 1 0 0 1-.13-1.41L13.71 12 9.39 6.63a1 1 0 0 1 .15-1.41 1 1 0 0 1 1.46.15l4.83 6a1 1 0 0 1 0 1.27l-5 6A1 1 0 0 1 10 19z"/>
+                  </svg>
+                                    <svg class="gi gi-arrow-ios-downward fs-sm" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 16a1 1 0 0 1-.64-.23l-6-5a1 1 0 1 1 1.28-1.54L12 13.71l5.36-4.32a1 1 0 0 1 1.41.15 1 1 0 0 1-.14 1.46l-6 4.83A1 1 0 0 1 12 16z"/>
+                  </svg>
+                                </div>
+                                <div class="collapse" id="collapseFour" data-parent="#accordionOne" aria-labelledby="headingFour">
+                                    <div class="accordion-body">
+                                        <div class="card mb-3">
+                                            <div class="card-body d-flex">
+                                                <span class="icon mr-3 bg-primary rounded-circle">
+                          <svg class="gi gi-google-fill fs-sm text-white" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.5 14a5.51 5.51 0 0 1-4.5 3.93 6.15 6.15 0 0 1-7-5.45A6 6 0 0 1 12 6a6.12 6.12 0 0 1 2.27.44.5.5 0 0 0 .64-.21l1.44-2.65a.52.52 0 0 0-.23-.7A10 10 0 0 0 2 12.29 10.12 10.12 0 0 0 11.57 22 10 10 0 0 0 22 12.52v-2a.51.51 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h5"/>
+                          </svg>
+                        </span>
+                                                <div>
+                                                    <h4 class="mb-2 fs-xxs lh-sm">Google</h4>
+                                                    <p class="lh-sm">Read, write, edit</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-3">
+                                            <div class="card-body d-flex">
+                                                <span class="icon mr-3 bg-success rounded-circle">
+                          <svg class="gi gi-facebook-fill fs-sm text-white" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 3.5a.5.5 0 0 0-.5-.5H14a4.77 4.77 0 0 0-5 4.5v2.7H6.5a.5.5 0 0 0-.5.5v2.6a.5.5 0 0 0 .5.5H9v6.7a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-6.7h2.62a.5.5 0 0 0 .49-.37l.72-2.6a.5.5 0 0 0-.48-.63H13V7.5a1 1 0 0 1 1-.9h2.5a.5.5 0 0 0 .5-.5z"/>
+                          </svg>
+                        </span>
+                                                <div>
+                                                    <h4 class="mb-2 fs-xxs lh-sm">Facebook</h4>
+                                                    <p class="lh-sm">Read, write, edit</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-3">
+                                            <div class="card-body d-flex">
+                                                <span class="icon mr-3 bg-info rounded-circle">
+                          <svg class="gi gi-twitter-fill fs-sm text-white" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.08 20A11.07 11.07 0 0 0 19.52 9 8.09 8.09 0 0 0 21 6.16a.44.44 0 0 0-.62-.51 1.88 1.88 0 0 1-2.16-.38 3.89 3.89 0 0 0-5.58-.17A4.13 4.13 0 0 0 11.49 9C8.14 9.2 5.84 7.61 4 5.43a.43.43 0 0 0-.75.24 9.68 9.68 0 0 0 4.6 10.05A6.73 6.73 0 0 1 3.38 18a.45.45 0 0 0-.14.84A11 11 0 0 0 8.08 20"/>
+                          </svg>
+                        </span>
+                                                <div>
+                                                    <h4 class="mb-2 fs-xxs lh-sm">Twitter</h4>
+                                                    <p class="lh-sm">No permissions set</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-body d-flex">
+                                                <span class="icon mr-3 bg-warning rounded-circle">
+                          <svg class="gi gi-linkedin-fill fs-sm text-white" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.15 8.4a5.83 5.83 0 0 0-5.85 5.82v5.88a.9.9 0 0 0 .9.9h2.1a.9.9 0 0 0 .9-.9v-5.88a1.94 1.94 0 0 1 2.15-1.93 2 2 0 0 1 1.75 2v5.81a.9.9 0 0 0 .9.9h2.1a.9.9 0 0 0 .9-.9v-5.88a5.83 5.83 0 0 0-5.85-5.82z"/>
+                            <rect x="3" y="9.3" width="4.5" height="11.7" rx=".9" ry=".9"/>
+                            <circle cx="5.25" cy="5.25" r="2.25"/>
+                          </svg>
+                        </span>
+                                                <div>
+                                                    <h4 class="mb-2 fs-xxs lh-sm">LinkedIn</h4>
+                                                    <p class="lh-sm">No permissions set</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header" id="headingFive" data-toggle="collapse" data-target="#collapseFive" role="button" aria-expanded="false" aria-controls="collapseFive">
+                                    <div class="mr-auto">
+                                        <h3 class="mb-1 fs-xxs lh-lg">Appearance</h3>
+                                        <p>Configure your preferences.</p>
+                                    </div>
+                                    <svg class="gi gi-arrow-ios-forward fs-sm" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 19a1 1 0 0 1-.64-.23 1 1 0 0 1-.13-1.41L13.71 12 9.39 6.63a1 1 0 0 1 .15-1.41 1 1 0 0 1 1.46.15l4.83 6a1 1 0 0 1 0 1.27l-5 6A1 1 0 0 1 10 19z"/>
+                  </svg>
+                                    <svg class="gi gi-arrow-ios-downward fs-sm" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 16a1 1 0 0 1-.64-.23l-6-5a1 1 0 1 1 1.28-1.54L12 13.71l5.36-4.32a1 1 0 0 1 1.41.15 1 1 0 0 1-.14 1.46l-6 4.83A1 1 0 0 1 12 16z"/>
+                  </svg>
+                                </div>
+                                <div class="collapse" id="collapseFive" data-parent="#accordionOne" aria-labelledby="headingFive">
+                                    <div class="accordion-body">
+                                        <form>
+                                            <div class="d-flex align-items-center mb-3">
+                                                <h4 class="mr-auto fs-xxs lh-lg">Action</h4>
+                                                <div class="form-check form-switch fs-sm">
+                                                    <input class="form-check-input" id="switchFour" type="checkbox">
+                                                    <label class="sr-only" for="switchFour">Switch</label>
+                                                </div>
+                                            </div>
+                                            <p>The quick brown fox jumps over the lazy dog.</p>
+                                        </form>
+                                    </div>
+                                </div>
+                                <hr class="my-0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="compose" tabindex="-1" role="dialog" aria-labelledby="composeLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="fs-xs" id="composeLabel">Compose</h2>
+                        <button class="btn btn-sm btn-circle btn-neutral align-self-start" data-dismiss="modal" type="button" aria-label="Close">
+              <svg class="gi gi-close fs-sm" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.41 12l4.3-4.29a1 1 0 1 0-1.42-1.42L12 10.59l-4.29-4.3a1 1 0 0 0-1.42 1.42l4.3 4.29-4.3 4.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l4.29-4.3 4.29 4.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z"/>
+              </svg>
+            </button>
+                    </div>
+                    <div class="modal-body p-0">
+                        <ul class="nav nav-tabs nav-justified p-3 px-sm-5 rounded-0" role="tablist" aria-orientation="horizontal">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#details" role="tab" aria-controls="details" aria-selected="true">Details</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#members" role="tab" aria-controls="members" aria-selected="false">Members</a>
+                            </li>
+                        </ul>
+                        <div class="px-3 py-5 px-sm-5">
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="details" role="tabpanel">
+                                    <form>
+                                        <label for="subject">Subject</label>
+                                        <input class="form-control form-control-lg mb-5" id="subject" type="text" placeholder="What's the subject?">
+                                        <label for="message">Message</label>
+                                        <textarea class="form-control" id="message" rows="3" placeholder="Hmm, are you friendly?"></textarea>
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade" id="members" role="tabpanel">
+                                    <form>
+                                        <div class="input-group mb-5">
+                                            <div class="input-group-prepend">
+                                                <svg class="gi gi-funnel-outline fs-sm" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M13.9 22a1 1 0 0 1-.6-.2l-4-3.05a1 1 0 0 1-.39-.8v-3.27l-4.8-9.22A1 1 0 0 1 5 4h14a1 1 0 0 1 .86.49 1 1 0 0 1 0 1l-5 9.21V21a1 1 0 0 1-.55.9 1 1 0 0 1-.41.1zm-3-4.54l2 1.53v-4.55A1 1 0 0 1 13 14l4.3-8H6.64l4.13 8a1 1 0 0 1 .11.46z"/>
+                        </svg>
+                                            </div>
+                                            <input class="form-control form-control-lg" type="search" placeholder="Search" aria-label="Search">
+                                        </div>
+                                    </form>
+                                    <h3 class="fs-xs">Members</h3>
+                                    <hr class="mb-0">
+                                    <div class="d-flex py-5 border-bottom">
+                                        <span class="avatar avatar-sm status status-online mr-3 bg-primary rounded-circle">jd</span>
+                                        <div class="mr-auto">
+                                            <h4 class="mb-2 fs-xxs lh-sm">John Doe</h4>
+                                            <p class="lh-sm">Manhattan</p>
+                                        </div>
+                                        <div class="form-check align-self-center ml-3">
+                                            <input class="form-check-input" id="checkboxOne" type="checkbox">
+                                            <label class="sr-only" for="checkboxOne">Checkbox</label>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex py-5 border-bottom">
+                                        <span class="avatar avatar-sm status status-offline mr-3 bg-success rounded-circle">jd</span>
+                                        <div class="mr-auto">
+                                            <h4 class="mb-2 fs-xxs lh-sm">John Doe</h4>
+                                            <p class="lh-sm">Manhattan</p>
+                                        </div>
+                                        <div class="form-check align-self-center ml-3">
+                                            <input class="form-check-input" id="checkboxTwo" type="checkbox">
+                                            <label class="sr-only" for="checkboxTwo">Checkbox</label>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex py-5 border-bottom">
+                                        <span class="avatar avatar-sm status status-offline mr-3 bg-info rounded-circle">jd</span>
+                                        <div class="mr-auto">
+                                            <h4 class="mb-2 fs-xxs lh-sm">John Doe</h4>
+                                            <p class="lh-sm">Manhattan</p>
+                                        </div>
+                                        <div class="form-check align-self-center ml-3">
+                                            <input class="form-check-input" id="checkboxThree" type="checkbox">
+                                            <label class="sr-only" for="checkboxThree">Checkbox</label>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex py-5 border-bottom">
+                                        <span class="avatar avatar-sm status status-offline mr-3 bg-warning rounded-circle">jd</span>
+                                        <div class="mr-auto">
+                                            <h4 class="mb-2 fs-xxs lh-sm">John Doe</h4>
+                                            <p class="lh-sm">Manhattan</p>
+                                        </div>
+                                        <div class="form-check align-self-center ml-3">
+                                            <input class="form-check-input" id="checkboxFour" type="checkbox">
+                                            <label class="sr-only" for="checkboxFour">Checkbox</label>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex py-5 border-bottom">
+                                        <span class="avatar avatar-sm status status-offline mr-3 bg-danger rounded-circle">jd</span>
+                                        <div class="mr-auto">
+                                            <h4 class="mb-2 fs-xxs lh-sm">John Doe</h4>
+                                            <p class="lh-sm">Manhattan</p>
+                                        </div>
+                                        <div class="form-check align-self-center ml-3">
+                                            <input class="form-check-input" id="checkboxFive" type="checkbox">
+                                            <label class="sr-only" for="checkboxFive">Checkbox</label>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex py-5 border-bottom">
+                                        <span class="avatar avatar-sm status status-offline mr-3 bg-primary rounded-circle">jd</span>
+                                        <div class="mr-auto">
+                                            <h4 class="mb-2 fs-xxs lh-sm">John Doe</h4>
+                                            <p class="lh-sm">Manhattan</p>
+                                        </div>
+                                        <div class="form-check align-self-center ml-3">
+                                            <input class="form-check-input" id="checkboxSix" type="checkbox">
+                                            <label class="sr-only" for="checkboxSix">Checkbox</label>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex py-5 border-bottom">
+                                        <span class="avatar avatar-sm status status-offline mr-3 bg-success rounded-circle">jd</span>
+                                        <div class="mr-auto">
+                                            <h4 class="mb-2 fs-xxs lh-sm">John Doe</h4>
+                                            <p class="lh-sm">Manhattan</p>
+                                        </div>
+                                        <div class="form-check align-self-center ml-3">
+                                            <input class="form-check-input" id="checkboxSeven" type="checkbox">
+                                            <label class="sr-only" for="checkboxSeven">Checkbox</label>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex py-5 border-bottom">
+                                        <span class="avatar avatar-sm status status-offline mr-3 bg-info rounded-circle">jd</span>
+                                        <div class="mr-auto">
+                                            <h4 class="mb-2 fs-xxs lh-sm">John Doe</h4>
+                                            <p class="lh-sm">Manhattan</p>
+                                        </div>
+                                        <div class="form-check align-self-center ml-3">
+                                            <input class="form-check-input" id="checkboxEight" type="checkbox">
+                                            <label class="sr-only" for="checkboxEight">Checkbox</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-block btn-lg btn-primary" type="submit">Compose</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main class="flex-lg-grow-1">
+            <div class="chat chat-offcanvas open">
+                <div class="d-flex">
+                    <div class="flex-grow-1">
+                        <div class="container px-lg-5" id="completeChat">
+                        </div>
+                        <button class="btn btn-circle btn-neutral sidebar-toggler" data-toggle="sidebar-offcanvas">
+              <svg class="gi gi-chevron-left ml-n3 fs-sm" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.36 17a1 1 0 0 1-.72-.31l-3.86-4a1 1 0 0 1 0-1.4l4-4a1 1 0 1 1 1.42 1.42L10.9 12l3.18 3.3a1 1 0 0 1 0 1.41 1 1 0 0 1-.72.29z"/>
+              </svg>
+            </button>
+                    </div>
+                    <div class="sidebar sidebar-expand-lg sidebar-offcanvas z-index-high vh-100">
+                        <div class="container py-5 px-lg-5">
+                            <div class="d-flex align-items-center mb-5">
+                                <h2 class="mr-auto fs-sm">Sidebar</h2>
+                                <button class="btn btn-sm btn-circle btn-neutral" data-toggle="sidebar-offcanvas" type="button">
+                  <svg class="gi gi-close fs-sm" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.41 12l4.3-4.29a1 1 0 1 0-1.42-1.42L12 10.59l-4.29-4.3a1 1 0 0 0-1.42 1.42l4.3 4.29-4.3 4.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l4.29-4.3 4.29 4.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z"/>
+                  </svg>
+                </button>
+                            </div>
+                            <ul class="nav nav-tabs nav-justified nav-sm mb-5" role="tablist" aria-orientation="horizontal">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#users" role="tab" aria-controls="users" aria-selected="true">Users</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#files" role="tab" aria-controls="files" aria-selected="false">Files</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="users" role="tabpanel">
+                                    <hr class="my-0">
+                                    <div class="d-flex py-5 border-bottom">
+                                        <span class="avatar avatar-sm status status-online mr-3 bg-primary rounded-circle">jd</span>
+                                        <div class="mr-auto">
+                                            <h3 class="mb-2 fs-xxs lh-sm">John Doe</h3>
+                                            <p class="lh-sm">Manhattan</p>
+                                        </div>
+                                        <div class="dropdown align-self-center ml-3">
+                                            <button class="btn" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="false">
+                        <svg class="gi gi-more-vertical fs-sm" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="12" cy="12" r="2"/>
+                          <circle cx="12" cy="5" r="2"/>
+                          <circle cx="12" cy="19" r="2"/>
+                        </svg>
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <button class="dropdown-item" type="button">Action</button>
+                                                <button class="dropdown-item" type="button">Another action</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex py-5 border-bottom">
+                                        <span class="avatar avatar-sm status status-offline mr-3 bg-success rounded-circle">jd</span>
+                                        <div class="mr-auto">
+                                            <h3 class="mb-2 fs-xxs lh-sm">John Doe</h3>
+                                            <p class="lh-sm">Manhattan</p>
+                                        </div>
+                                        <div class="dropdown align-self-center ml-3">
+                                            <button class="btn" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="false">
+                        <svg class="gi gi-more-vertical fs-sm" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="12" cy="12" r="2"/>
+                          <circle cx="12" cy="5" r="2"/>
+                          <circle cx="12" cy="19" r="2"/>
+                        </svg>
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <button class="dropdown-item" type="button">Action</button>
+                                                <button class="dropdown-item" type="button">Another action</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex py-5 border-bottom">
+                                        <span class="avatar avatar-sm status status-offline mr-3 bg-info rounded-circle">jd</span>
+                                        <div class="mr-auto">
+                                            <h3 class="mb-2 fs-xxs lh-sm">John Doe</h3>
+                                            <p class="lh-sm">Manhattan</p>
+                                        </div>
+                                        <div class="dropdown align-self-center ml-3">
+                                            <button class="btn" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="false">
+                        <svg class="gi gi-more-vertical fs-sm" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="12" cy="12" r="2"/>
+                          <circle cx="12" cy="5" r="2"/>
+                          <circle cx="12" cy="19" r="2"/>
+                        </svg>
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <button class="dropdown-item" type="button">Action</button>
+                                                <button class="dropdown-item" type="button">Another action</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex py-5 border-bottom">
+                                        <span class="avatar avatar-sm status status-offline mr-3 bg-warning rounded-circle">jd</span>
+                                        <div class="mr-auto">
+                                            <h3 class="mb-2 fs-xxs lh-sm">John Doe</h3>
+                                            <p class="lh-sm">Manhattan</p>
+                                        </div>
+                                        <div class="dropdown align-self-center ml-3">
+                                            <button class="btn" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="false">
+                        <svg class="gi gi-more-vertical fs-sm" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="12" cy="12" r="2"/>
+                          <circle cx="12" cy="5" r="2"/>
+                          <circle cx="12" cy="19" r="2"/>
+                        </svg>
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <button class="dropdown-item" type="button">Action</button>
+                                                <button class="dropdown-item" type="button">Another action</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex py-5 border-bottom">
+                                        <span class="avatar avatar-sm status status-offline mr-3 bg-danger rounded-circle">jd</span>
+                                        <div class="mr-auto">
+                                            <h3 class="mb-2 fs-xxs lh-sm">John Doe</h3>
+                                            <p class="lh-sm">Manhattan</p>
+                                        </div>
+                                        <div class="dropdown align-self-center ml-3">
+                                            <button class="btn" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="false">
+                        <svg class="gi gi-more-vertical fs-sm" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="12" cy="12" r="2"/>
+                          <circle cx="12" cy="5" r="2"/>
+                          <circle cx="12" cy="19" r="2"/>
+                        </svg>
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <button class="dropdown-item" type="button">Action</button>
+                                                <button class="dropdown-item" type="button">Another action</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex py-5 border-bottom">
+                                        <span class="avatar avatar-sm status status-offline mr-3 bg-primary rounded-circle">jd</span>
+                                        <div class="mr-auto">
+                                            <h3 class="mb-2 fs-xxs lh-sm">John Doe</h3>
+                                            <p class="lh-sm">Manhattan</p>
+                                        </div>
+                                        <div class="dropdown align-self-center ml-3">
+                                            <button class="btn" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="false">
+                        <svg class="gi gi-more-vertical fs-sm" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="12" cy="12" r="2"/>
+                          <circle cx="12" cy="5" r="2"/>
+                          <circle cx="12" cy="19" r="2"/>
+                        </svg>
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <button class="dropdown-item" type="button">Action</button>
+                                                <button class="dropdown-item" type="button">Another action</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex py-5 border-bottom">
+                                        <span class="avatar avatar-sm status status-offline mr-3 bg-success rounded-circle">jd</span>
+                                        <div class="mr-auto">
+                                            <h3 class="mb-2 fs-xxs lh-sm">John Doe</h3>
+                                            <p class="lh-sm">Manhattan</p>
+                                        </div>
+                                        <div class="dropdown align-self-center ml-3">
+                                            <button class="btn" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="false">
+                        <svg class="gi gi-more-vertical fs-sm" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="12" cy="12" r="2"/>
+                          <circle cx="12" cy="5" r="2"/>
+                          <circle cx="12" cy="19" r="2"/>
+                        </svg>
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <button class="dropdown-item" type="button">Action</button>
+                                                <button class="dropdown-item" type="button">Another action</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex py-5 border-bottom">
+                                        <span class="avatar avatar-sm status status-offline mr-3 bg-info rounded-circle">jd</span>
+                                        <div class="mr-auto">
+                                            <h3 class="mb-2 fs-xxs lh-sm">John Doe</h3>
+                                            <p class="lh-sm">Manhattan</p>
+                                        </div>
+                                        <div class="dropdown align-self-center ml-3">
+                                            <button class="btn" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="false">
+                        <svg class="gi gi-more-vertical fs-sm" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="12" cy="12" r="2"/>
+                          <circle cx="12" cy="5" r="2"/>
+                          <circle cx="12" cy="19" r="2"/>
+                        </svg>
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <button class="dropdown-item" type="button">Action</button>
+                                                <button class="dropdown-item" type="button">Another action</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="files" role="tabpanel">
+                                    <label class="w-100">
+                    <input class="d-none" type="file">
+                    <span class="dropzone">Drag & drop files here</span>
+                  </label>
+                                    <div class="card mb-3">
+                                        <div class="card-body d-flex align-items-center">
+                                            <span class="icon bg-neutral border rounded-circle">
+                        <svg class="gi gi-file-text-fill fs-xs" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19.74 7.33l-4.44-5a1 1 0 0 0-.74-.33h-8A2.53 2.53 0 0 0 4 4.5v15A2.53 2.53 0 0 0 6.56 22h10.88A2.53 2.53 0 0 0 20 19.5V8a1 1 0 0 0-.26-.67zM9 12h3a1 1 0 0 1 0 2H9a1 1 0 0 1 0-2zm6 6H9a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2zm-.29-10a.79.79 0 0 1-.71-.85V4l3.74 4z"/>
+                        </svg>
+                      </span>
+                                            <span class="avatar avatar-sm bg-primary mr-3 ml-n3 border rounded-circle">jd</span>
+                                            <div class="mr-auto">
+                                                <h3 class="mb-2 fs-xxs lh-sm">
+                                                    <a href="#">file.txt</a>
+                                                </h3>
+                                                <p class="lh-sm">8kb</p>
+                                            </div>
+                                            <div class="dropdown">
+                                                <button class="btn" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="false">
+                          <svg class="gi gi-more-vertical fs-sm" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="2"/>
+                            <circle cx="12" cy="5" r="2"/>
+                            <circle cx="12" cy="19" r="2"/>
+                          </svg>
+                          <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <button class="dropdown-item" type="button">Action</button>
+                                                    <button class="dropdown-item" type="button">Another action</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-3">
+                                        <div class="card-body d-flex align-items-center">
+                                            <span class="icon bg-neutral border rounded-circle">
+                        <svg class="gi gi-file-text-fill fs-xs" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19.74 7.33l-4.44-5a1 1 0 0 0-.74-.33h-8A2.53 2.53 0 0 0 4 4.5v15A2.53 2.53 0 0 0 6.56 22h10.88A2.53 2.53 0 0 0 20 19.5V8a1 1 0 0 0-.26-.67zM9 12h3a1 1 0 0 1 0 2H9a1 1 0 0 1 0-2zm6 6H9a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2zm-.29-10a.79.79 0 0 1-.71-.85V4l3.74 4z"/>
+                        </svg>
+                      </span>
+                                            <span class="avatar avatar-sm bg-success mr-3 ml-n3 border rounded-circle">jd</span>
+                                            <div class="mr-auto">
+                                                <h3 class="mb-2 fs-xxs lh-sm">
+                                                    <a href="#">file.txt</a>
+                                                </h3>
+                                                <p class="lh-sm">16kb</p>
+                                            </div>
+                                            <div class="dropdown">
+                                                <button class="btn" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="false">
+                          <svg class="gi gi-more-vertical fs-sm" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="2"/>
+                            <circle cx="12" cy="5" r="2"/>
+                            <circle cx="12" cy="19" r="2"/>
+                          </svg>
+                          <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <button class="dropdown-item" type="button">Action</button>
+                                                    <button class="dropdown-item" type="button">Another action</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-3">
+                                        <div class="card-body d-flex align-items-center">
+                                            <span class="icon bg-neutral border rounded-circle">
+                        <svg class="gi gi-file-text-fill fs-xs" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19.74 7.33l-4.44-5a1 1 0 0 0-.74-.33h-8A2.53 2.53 0 0 0 4 4.5v15A2.53 2.53 0 0 0 6.56 22h10.88A2.53 2.53 0 0 0 20 19.5V8a1 1 0 0 0-.26-.67zM9 12h3a1 1 0 0 1 0 2H9a1 1 0 0 1 0-2zm6 6H9a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2zm-.29-10a.79.79 0 0 1-.71-.85V4l3.74 4z"/>
+                        </svg>
+                      </span>
+                                            <span class="avatar avatar-sm bg-info mr-3 ml-n3 border rounded-circle">jd</span>
+                                            <div class="mr-auto">
+                                                <h3 class="mb-2 fs-xxs lh-sm">
+                                                    <a href="#">file.txt</a>
+                                                </h3>
+                                                <p class="lh-sm">24kb</p>
+                                            </div>
+                                            <div class="dropdown">
+                                                <button class="btn" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="false">
+                          <svg class="gi gi-more-vertical fs-sm" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="2"/>
+                            <circle cx="12" cy="5" r="2"/>
+                            <circle cx="12" cy="19" r="2"/>
+                          </svg>
+                          <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <button class="dropdown-item" type="button">Action</button>
+                                                    <button class="dropdown-item" type="button">Another action</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-3">
+                                        <div class="card-body d-flex align-items-center">
+                                            <span class="icon bg-neutral border rounded-circle">
+                        <svg class="gi gi-file-text-fill fs-xs" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19.74 7.33l-4.44-5a1 1 0 0 0-.74-.33h-8A2.53 2.53 0 0 0 4 4.5v15A2.53 2.53 0 0 0 6.56 22h10.88A2.53 2.53 0 0 0 20 19.5V8a1 1 0 0 0-.26-.67zM9 12h3a1 1 0 0 1 0 2H9a1 1 0 0 1 0-2zm6 6H9a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2zm-.29-10a.79.79 0 0 1-.71-.85V4l3.74 4z"/>
+                        </svg>
+                      </span>
+                                            <span class="avatar avatar-sm bg-warning mr-3 ml-n3 border rounded-circle">jd</span>
+                                            <div class="mr-auto">
+                                                <h3 class="mb-2 fs-xxs lh-sm">
+                                                    <a href="#">file.txt</a>
+                                                </h3>
+                                                <p class="lh-sm">32kb</p>
+                                            </div>
+                                            <div class="dropdown">
+                                                <button class="btn" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="false">
+                          <svg class="gi gi-more-vertical fs-sm" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="2"/>
+                            <circle cx="12" cy="5" r="2"/>
+                            <circle cx="12" cy="19" r="2"/>
+                          </svg>
+                          <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <button class="dropdown-item" type="button">Action</button>
+                                                    <button class="dropdown-item" type="button">Another action</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-3">
+                                        <div class="card-body d-flex align-items-center">
+                                            <span class="icon bg-neutral border rounded-circle">
+                        <svg class="gi gi-file-text-fill fs-xs" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19.74 7.33l-4.44-5a1 1 0 0 0-.74-.33h-8A2.53 2.53 0 0 0 4 4.5v15A2.53 2.53 0 0 0 6.56 22h10.88A2.53 2.53 0 0 0 20 19.5V8a1 1 0 0 0-.26-.67zM9 12h3a1 1 0 0 1 0 2H9a1 1 0 0 1 0-2zm6 6H9a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2zm-.29-10a.79.79 0 0 1-.71-.85V4l3.74 4z"/>
+                        </svg>
+                      </span>
+                                            <span class="avatar avatar-sm bg-danger mr-3 ml-n3 border rounded-circle">jd</span>
+                                            <div class="mr-auto">
+                                                <h3 class="mb-2 fs-xxs lh-sm">
+                                                    <a href="#">file.txt</a>
+                                                </h3>
+                                                <p class="lh-sm">40kb</p>
+                                            </div>
+                                            <div class="dropdown">
+                                                <button class="btn" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="false">
+                          <svg class="gi gi-more-vertical fs-sm" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="2"/>
+                            <circle cx="12" cy="5" r="2"/>
+                            <circle cx="12" cy="19" r="2"/>
+                          </svg>
+                          <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <button class="dropdown-item" type="button">Action</button>
+                                                    <button class="dropdown-item" type="button">Another action</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-3">
+                                        <div class="card-body d-flex align-items-center">
+                                            <span class="icon bg-neutral border rounded-circle">
+                        <svg class="gi gi-file-text-fill fs-xs" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19.74 7.33l-4.44-5a1 1 0 0 0-.74-.33h-8A2.53 2.53 0 0 0 4 4.5v15A2.53 2.53 0 0 0 6.56 22h10.88A2.53 2.53 0 0 0 20 19.5V8a1 1 0 0 0-.26-.67zM9 12h3a1 1 0 0 1 0 2H9a1 1 0 0 1 0-2zm6 6H9a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2zm-.29-10a.79.79 0 0 1-.71-.85V4l3.74 4z"/>
+                        </svg>
+                      </span>
+                                            <span class="avatar avatar-sm bg-primary mr-3 ml-n3 border rounded-circle">jd</span>
+                                            <div class="mr-auto">
+                                                <h3 class="mb-2 fs-xxs lh-sm">
+                                                    <a href="#">file.txt</a>
+                                                </h3>
+                                                <p class="lh-sm">48kb</p>
+                                            </div>
+                                            <div class="dropdown">
+                                                <button class="btn" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="false">
+                          <svg class="gi gi-more-vertical fs-sm" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="2"/>
+                            <circle cx="12" cy="5" r="2"/>
+                            <circle cx="12" cy="19" r="2"/>
+                          </svg>
+                          <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <button class="dropdown-item" type="button">Action</button>
+                                                    <button class="dropdown-item" type="button">Another action</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-3">
+                                        <div class="card-body d-flex align-items-center">
+                                            <span class="icon bg-neutral border rounded-circle">
+                        <svg class="gi gi-file-text-fill fs-xs" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19.74 7.33l-4.44-5a1 1 0 0 0-.74-.33h-8A2.53 2.53 0 0 0 4 4.5v15A2.53 2.53 0 0 0 6.56 22h10.88A2.53 2.53 0 0 0 20 19.5V8a1 1 0 0 0-.26-.67zM9 12h3a1 1 0 0 1 0 2H9a1 1 0 0 1 0-2zm6 6H9a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2zm-.29-10a.79.79 0 0 1-.71-.85V4l3.74 4z"/>
+                        </svg>
+                      </span>
+                                            <span class="avatar avatar-sm bg-success mr-3 ml-n3 border rounded-circle">jd</span>
+                                            <div class="mr-auto">
+                                                <h3 class="mb-2 fs-xxs lh-sm">
+                                                    <a href="#">file.txt</a>
+                                                </h3>
+                                                <p class="lh-sm">56kb</p>
+                                            </div>
+                                            <div class="dropdown">
+                                                <button class="btn" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="false">
+                          <svg class="gi gi-more-vertical fs-sm" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="2"/>
+                            <circle cx="12" cy="5" r="2"/>
+                            <circle cx="12" cy="19" r="2"/>
+                          </svg>
+                          <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <button class="dropdown-item" type="button">Action</button>
+                                                    <button class="dropdown-item" type="button">Another action</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body d-flex align-items-center">
+                                            <span class="icon bg-neutral border rounded-circle">
+                        <svg class="gi gi-file-text-fill fs-xs" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19.74 7.33l-4.44-5a1 1 0 0 0-.74-.33h-8A2.53 2.53 0 0 0 4 4.5v15A2.53 2.53 0 0 0 6.56 22h10.88A2.53 2.53 0 0 0 20 19.5V8a1 1 0 0 0-.26-.67zM9 12h3a1 1 0 0 1 0 2H9a1 1 0 0 1 0-2zm6 6H9a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2zm-.29-10a.79.79 0 0 1-.71-.85V4l3.74 4z"/>
+                        </svg>
+                      </span>
+                                            <span class="avatar avatar-sm bg-info mr-3 ml-n3 border rounded-circle">jd</span>
+                                            <div class="mr-auto">
+                                                <h3 class="mb-2 fs-xxs lh-sm">
+                                                    <a href="#">file.txt</a>
+                                                </h3>
+                                                <p class="lh-sm">64kb</p>
+                                            </div>
+                                            <div class="dropdown">
+                                                <button class="btn" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="false">
+                          <svg class="gi gi-more-vertical fs-sm" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="2"/>
+                            <circle cx="12" cy="5" r="2"/>
+                            <circle cx="12" cy="19" r="2"/>
+                          </svg>
+                          <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <button class="dropdown-item" type="button">Action</button>
+                                                    <button class="dropdown-item" type="button">Another action</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="modal fade" id="call" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content d-flex flex-column justify-content-between bg-neutral" style="height: 504px;">
+                    <div class="modal-header">
+                        <span class="badge font-weight-semi-bold text-white text-uppercase bg-danger">Live</span>
+                        <button class="btn btn-circle frosted-glass" type="button">
+              <svg class="gi gi-expand fs-sm text-white" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 5a1 1 0 0 0-1-1h-5a1 1 0 0 0 0 2h2.57l-3.28 3.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L18 7.42V10a1 1 0 0 0 1 1 1 1 0 0 0 1-1z"/>
+                <path d="M10.71 13.29a1 1 0 0 0-1.42 0L6 16.57V14a1 1 0 0 0-1-1 1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h5a1 1 0 0 0 0-2H7.42l3.29-3.29a1 1 0 0 0 0-1.42z"/>
+              </svg>
+            </button>
+                    </div>
+                    <div class="modal-footer text-center">
+                        <div class="d-inline-flex p-3 mx-auto frosted-glass rounded">
+                            <button class="btn mr-5" type="button">
+                <i class="gi-animation-hover">
+                  <svg class="gi gi-mic-fill gi-animation gi-animation-hover-pulse fs-md text-white" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 15a4 4 0 0 0 4-4V6a4 4 0 0 0-8 0v5a4 4 0 0 0 4 4z"/>
+                    <path d="M19 11a1 1 0 0 0-2 0 5 5 0 0 1-10 0 1 1 0 0 0-2 0 7 7 0 0 0 6 6.92V20H8.89a.89.89 0 0 0-.89.89v.22a.89.89 0 0 0 .89.89h6.22a.89.89 0 0 0 .89-.89v-.22a.89.89 0 0 0-.89-.89H13v-2.08A7 7 0 0 0 19 11z"/>
+                  </svg>
+                </i>
+              </button>
+                            <button class="btn mr-5" type="button">
+                <i class="gi-animation-hover">
+                  <svg class="gi gi-video-fill gi-animation gi-animation-hover-pulse fs-md text-white" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 7.15a1.7 1.7 0 0 0-1.85.3l-2.15 2V8a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h9a3 3 0 0 0 3-3v-1.45l2.16 2a1.74 1.74 0 0 0 1.16.45 1.68 1.68 0 0 0 .69-.15 1.6 1.6 0 0 0 1-1.48V8.63A1.6 1.6 0 0 0 21 7.15z"/>
+                  </svg>
+                </i>
+              </button>
+                            <button class="btn mr-5" type="button">
+                <i class="gi-animation-hover">
+                  <svg class="gi gi-volume-up-fill gi-animation gi-animation-hover-pulse fs-md text-white" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.28 8.37a1 1 0 1 0-1.56 1.26 4 4 0 0 1 0 4.74A1 1 0 0 0 17.5 16a1 1 0 0 0 .78-.37 6 6 0 0 0 0-7.26z"/>
+                    <path d="M19.64 5.23a1 1 0 1 0-1.28 1.54A6.8 6.8 0 0 1 21 12a6.8 6.8 0 0 1-2.64 5.23 1 1 0 0 0-.13 1.41A1 1 0 0 0 19 19a1 1 0 0 0 .64-.23A8.75 8.75 0 0 0 23 12a8.75 8.75 0 0 0-3.36-6.77z"/>
+                    <path d="M14.47 3.12a1 1 0 0 0-1 0L7 7.57H2a1 1 0 0 0-1 1v6.86a1 1 0 0 0 1 1h5l6.41 4.4A1.06 1.06 0 0 0 14 21a1 1 0 0 0 1-1V4a1 1 0 0 0-.53-.88z"/>
+                  </svg>
+                </i>
+              </button>
+                            <button class="btn btn-circle btn-danger rounded" type="button">
+                <i class="gi-animation-hover">
+                  <svg class="gi gi-phone-fill gi-animation gi-animation-hover-shake fs-md" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.4 22A15.42 15.42 0 0 1 2 6.6 4.6 4.6 0 0 1 6.6 2a3.94 3.94 0 0 1 .77.07 3.79 3.79 0 0 1 .72.18 1 1 0 0 1 .65.75l1.37 6a1 1 0 0 1-.26.92c-.13.14-.14.15-1.37.79a9.91 9.91 0 0 0 4.87 4.89c.65-1.24.66-1.25.8-1.38a1 1 0 0 1 .92-.26l6 1.37a1 1 0 0 1 .72.65 4.34 4.34 0 0 1 .19.73 4.77 4.77 0 0 1 .06.76A4.6 4.6 0 0 1 17.4 22z"/>
+                  </svg>
+                </i>
+              </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+    <script src="js/offcanvas.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

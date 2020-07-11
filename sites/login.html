@@ -1,0 +1,27 @@
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<form>
+    <input id="username" type="text" placeholder="Username">
+    <input id="password" type="text" placeholder="Password">
+</form>
+<button id="login">Login</button>
+
+<script>
+    $('#login').click(() => {
+        $.ajax('/auth/login', {
+            method: 'post',
+            data: {
+                username: $('#username').val(),
+                password: $('#password').val()
+            },
+            success: (response) => {
+                if (response.error) {
+                    alert(response.error.msg)
+                    return;
+                }
+                localStorage.setItem("token", response.token);
+                alert("successfull login")
+            }
+        })
+    });
+</script>
